@@ -1,0 +1,132 @@
+ body {
+    background: url(../images/background.jpg) no-repeat center center fixed;
+    background-size: cover; /* Современные браузеры */
+   }
+
+div.container {
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto; /* центрируем основной контейнер */
+}
+img {
+  width: 100%; /* ширина картинки */
+  height: auto; /* высота картинки */
+}
+.cls-1{
+	fill:#333;opacity:0.79;
+}
+.joor {
+    padding: 1rem 2rem;
+}
+.cls-1{fill:#333;opacity:0.79;}
+.navbar{
+ background:#F97300;
+}
+.nav-link , .navbar-brand{
+ color: #f4f4f4;
+ cursor: pointer;
+}
+.nav-link{
+ margin-right: 1em !important;
+}
+.nav-link:hover{
+ background: #f4f4f4;
+ color: #f97300;
+}
+.navbar-collapse{
+ justify-content: flex-end;
+}
+.navbar-toggler{
+  background:#fff !important;
+}
+.header{
+ background-image: url('images/Map1.jpg');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+.description h3{
+	color:#FFFFFF ;
+}
+ h3{
+	color:#FFFFFF ;
+}
+.description p{
+	color:#FCF4F4;
+	font-size: 20px;
+	width: 50%;
+	line-height: 1.5;
+}
+.scheme {
+	height: 393px;
+	width: 738px;
+	margin: 0 auto;
+	position: relative;
+	
+}
+.scheme svg {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+	.scheme polygon{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	}
+	
+
+.floor1{
+	z-index:100;
+	position:relative
+}
+.floor2{
+	z-index:50;
+	position:relative
+}
+.floor3{
+	z-index:30;
+	position:relative
+}
+.floor4{
+	z-index:20;
+	position:relative
+}
+img{
+	position: absolute;
+	pointer-events: none;
+}
+.scheme rect {
+	opacity:0.74;
+	fill:#2D2D2D;
+	cursor: pointer;
+}
+.scheme-item {
+	position: absolute;
+	cursor: pointer;
+}
+.scheme-name {
+	font-weight: bold;
+	font-size: 10px;
+	text-align: center;
+	line-height: 13px;
+}
+.scheme-popup {
+	display: none;
+	border: 1px solid #777;
+	padding: 10px;
+	width: 200px;
+	position: absolute;
+	font-size: 12px;
+	line-height: 14px;
+	background: #fff;
+	z-index: 9999;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	text-align: left;
+}
+.scheme rect:hover, #hover {
+	fill: #ffc70b;
+}
+.scheme rect.active {
+	fill: #FF8C0B !important;
+}
