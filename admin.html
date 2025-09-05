@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin panel</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container py-4">
+    <h1 class="mb-4">Admin panel</h1>
+    <form id="service-form">
+      <input type="hidden" id="service-id">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" id="service-name" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Description</label>
+        <textarea id="service-description" class="form-control" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">URL</label>
+        <input type="url" id="service-url" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Icon URL (optional)</label>
+        <input type="url" id="service-icon" class="form-control">
+      </div>
+      <div id="bookmark-container" class="mb-3">
+        <label class="form-label">Bookmarks</label>
+      </div>
+      <button type="button" id="add-bookmark" class="btn btn-sm btn-outline-secondary mb-3">Add bookmark</button>
+      <div>
+        <button type="submit" class="btn btn-primary">Save</button>
+        <button type="button" id="reset-form" class="btn btn-secondary">Clear</button>
+      </div>
+    </form>
+    <hr>
+    <h2>Existing services</h2>
+    <div id="service-list"></div>
+    <a href="dashboard.html" class="btn btn-secondary mt-3">Back to dashboard</a>
+  </div>
+  <script src="js/admin.js"></script>
+</body>
+</html>
