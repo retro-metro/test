@@ -1,7 +1,10 @@
 const defaultIcons = [
   'images/icons/default1.svg',
   'images/icons/default2.svg',
-  'images/icons/default3.svg'
+  'images/icons/default3.svg',
+  'images/icons/alt1.svg',
+  'images/icons/alt2.svg',
+  'images/icons/alt3.svg'
 ];
 
 function loadServices() {
